@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HRPortal</class>
+ <widget class="QMainWindow" name="HRPortal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1182</width>
+    <height>815</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>H.R. Portal</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="hrTabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>1151</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="benefitsTab">
+     <attribute name="title">
+      <string>Benefits</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="pensionsTab">
+     <attribute name="title">
+      <string>Pensions</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="recruitingTab">
+     <attribute name="title">
+      <string>Recruiting</string>
+     </attribute>
+     <widget class="QTabWidget" name="RecruitingOnboardingTbWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>1101</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Workforce Planning</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Recruitment</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Onboarding</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>Talent Development</string>
+       </attribute>
+       <widget class="QTabWidget" name="talentDevelopmentTabWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>1081</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab_8">
+         <attribute name="title">
+          <string>Training</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="tab_9">
+         <attribute name="title">
+          <string>Learning Administration</string>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="compensationAndLeaveTab">
+     <attribute name="title">
+      <string>Compensation and Leave</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="DisciplineTab">
+     <attribute name="title">
+      <string>Discipline</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="separationTab">
+     <attribute name="title">
+      <string>Separation</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1182</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
