@@ -6,5 +6,6 @@
 *.txt
 *.html
 *.pdf
+*.yaml
 out
 gen
