@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1182</width>
-    <height>815</height>
+    <width>835</width>
+    <height>934</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
       <x>20</x>
       <y>50</y>
       <width>1151</width>
-      <height>701</height>
+      <height>831</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -46,7 +46,7 @@
         <x>20</x>
         <y>10</y>
         <width>1101</width>
-        <height>641</height>
+        <height>811</height>
        </rect>
       </property>
       <property name="currentIndex">
@@ -66,6 +66,1171 @@
        <attribute name="title">
         <string>Onboarding</string>
        </attribute>
+       <widget class="QRadioButton" name="BkgrdCheckComNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>470</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="obPantsDistLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>350</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pants distributed</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="obFirearmsTrainScore">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>590</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Firearms training score</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="obFirearmsTrainCompLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>560</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Firearms training completed</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="FirearmsTrainCompNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>560</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">FirearmsTrainingCompButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="EmpIntroYesButton">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>0</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">EmpIntroInterviewButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obEmployeeViewedLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>160</y>
+          <width>201</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Employee viewed orientation video</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="BkgrdCheckReqYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>440</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">BkgrdCheckReqButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="EmpIntroNoButton">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>0</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">EmpIntroInterviewButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="HatDistYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>410</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">HatDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="EmpViewedVideoNoButton">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>160</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">EmpViewedVideoButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="AmmoDistNAGroup">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>670</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>N/A</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">AmmoDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obUniformReqLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>290</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Uinform required</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="BkgrdCheckComYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>470</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="SecurityLevel2Button">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>200</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Level 2</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">SecurityLevelButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="UniformReqYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>290</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">UniformReqButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="AmmoDistNoGroup">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>670</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">AmmoDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obSecurityClearanceLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>200</y>
+          <width>171</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Security clearance level required</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="UniformReqNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>290</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">UniformReqButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="FirearmDistYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>630</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">FirearmDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="BkgrdCheckCompNAButton">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>470</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>N/A</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="SecurityLevel3Button">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>200</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Level 3</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">SecurityLevelButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obBootsDistLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>320</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Boots distributed</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="obBkgrdCheckReqLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>440</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Background check required</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="ShirtDistNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>380</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">ShirtDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="FirearmsTrainReqYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>530</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">FirearmsTrainingReqButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="ShirtDistYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>380</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">ShirtDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QComboBox" name="WhoDidInterviewComboBox">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>40</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bob</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Steve</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Jamie</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QRadioButton" name="HatDistNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>410</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">HatDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="BootsDistYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>320</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">BootsDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obOrientationResourcesLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>120</y>
+          <width>171</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Orientation resources available</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="BootsDistNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>320</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">BootsDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="FirearmsTrainCompNAButton">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>560</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>N/A</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">FirearmsTrainingCompButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="SecurityLevel1Button">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>200</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Level 1</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">SecurityLevelButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obHatDistLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>410</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hat distributed</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="obInterviewLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>201</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Employee given introductory interview</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="BkgrdCheckFailButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>500</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Fail</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">BkgrdCheckResultButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obFirearmDistLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>630</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Firearm distributed</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="obConducInterviewLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>211</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Who conducted the introductory interview</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="PantsDistNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>350</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">PantsDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="HatDistNAButton">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>410</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>N/A</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">HatDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="FirearmDistNAButton">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>630</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>N/A</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">FirearmDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obFirearmsTrainReqLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>530</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Firearms training required</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="SecBadgeDistYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>250</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">SecurityBadgeDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="SecBadgeDistNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>250</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">SecurityBadgeDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="BkgrdCheckReqNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>440</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">BkgrdCheckReqButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="FirearmsTrainCompYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>560</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">FirearmsTrainingCompButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="FirearmDistNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>630</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">FirearmDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obOrientationLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>80</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Orientation required</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="obSecurityBadgeLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>250</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Security badge distributed</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="ShirtDistNAButton">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>380</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>N/A</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">ShirtDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QComboBox" name="OrientationResourcesComboBox">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>120</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Monday Oct 22</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Wednesday Oct 24</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Monday Oct 29</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QRadioButton" name="PantsDistNAButton">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>350</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>N/A</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">PantsDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obBkgrdChecCompLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>470</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Background check completed</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="obBkgrdCheckResultLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>500</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Background check result</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="PantsDistYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>350</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">PantsDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="BkgrdCheckPassButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>500</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pass</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">BkgrdCheckResultButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="SecurityLevel4Button">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>200</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Level 4</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">SecurityLevelButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="FirearmsTrainReqNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>530</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">FirearmsTrainingReqButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QPlainTextEdit" name="FireArmsTrainingScoreTextBox">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>590</y>
+          <width>104</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="obAmmoDistLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>670</y>
+          <width>151</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ammunition distributed</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="obShirtDistLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>380</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Shirt distributed</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="OrientationRequiredComboBox">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>80</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Type A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Type B</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Type C</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QRadioButton" name="EmpViewedVideoYesButton">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>160</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">EmpViewedVideoButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="AmmoDistYesGroup">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>670</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">AmmoDistButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obNDAReqLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>NDA required</string>
+        </property>
+       </widget>
+       <widget class="QDialogButtonBox" name="Save">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>30</y>
+          <width>156</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="standardButtons">
+         <set>QDialogButtonBox::Close|QDialogButtonBox::Save</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="obNDASignedLabel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>NDA signed</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="NDASignedNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>730</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">NDASignedButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obNDAReqLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>700</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>NDA required</string>
+        </property>
+       </widget>
+       <widget class="QDialogButtonBox" name="Save_2">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>730</y>
+          <width>156</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="standardButtons">
+         <set>QDialogButtonBox::Close|QDialogButtonBox::Save</set>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="NDASignedNAButton">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>730</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>N/A</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">NDASignedButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="NDAReqNoButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>700</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>No</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">NDARequiredButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="obNDASignedLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>730</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>NDA signed</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="NDASignedYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>730</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">NDASignedButtonGroup</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="NDAReqYesButton">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>700</y>
+          <width>82</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yes</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">NDARequiredButtonGroup</string>
+        </attribute>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
@@ -119,8 +1284,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1182</width>
-     <height>22</height>
+     <width>835</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
@@ -128,4 +1293,23 @@
  </widget>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="EmpIntroInterviewButtonGroup"/>
+  <buttongroup name="EmpViewedVideoButtonGroup"/>
+  <buttongroup name="SecurityLevelButtonGroup"/>
+  <buttongroup name="SecurityBadgeDistButtonGroup"/>
+  <buttongroup name="UniformReqButtonGroup"/>
+  <buttongroup name="BootsDistButtonGroup"/>
+  <buttongroup name="PantsDistButtonGroup"/>
+  <buttongroup name="ShirtDistButtonGroup"/>
+  <buttongroup name="HatDistButtonGroup"/>
+  <buttongroup name="BkgrdCheckReqButtonGroup"/>
+  <buttongroup name="BkgrdCheckResultButtonGroup"/>
+  <buttongroup name="FirearmsTrainingReqButtonGroup"/>
+  <buttongroup name="FirearmsTrainingCompButtonGroup"/>
+  <buttongroup name="FirearmDistButtonGroup"/>
+  <buttongroup name="AmmoDistButtonGroup"/>
+  <buttongroup name="NDARequiredButtonGroup"/>
+  <buttongroup name="NDASignedButtonGroup"/>
+ </buttongroups>
 </ui>
