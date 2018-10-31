@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>835</width>
-    <height>934</height>
+    <width>1255</width>
+    <height>951</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="benefitsTab">
      <attribute name="title">
@@ -50,7 +50,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_5">
        <attribute name="title">
@@ -1284,8 +1284,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>835</width>
-     <height>21</height>
+     <width>1255</width>
+     <height>22</height>
     </rect>
    </property>
   </widget>
@@ -1294,22 +1294,22 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="EmpIntroInterviewButtonGroup"/>
-  <buttongroup name="EmpViewedVideoButtonGroup"/>
+  <buttongroup name="HatDistButtonGroup"/>
+  <buttongroup name="BkgrdCheckResultButtonGroup"/>
+  <buttongroup name="BootsDistButtonGroup"/>
+  <buttongroup name="NDARequiredButtonGroup"/>
+  <buttongroup name="ShirtDistButtonGroup"/>
+  <buttongroup name="FirearmDistButtonGroup"/>
   <buttongroup name="SecurityLevelButtonGroup"/>
+  <buttongroup name="FirearmsTrainingCompButtonGroup"/>
+  <buttongroup name="FirearmsTrainingReqButtonGroup"/>
+  <buttongroup name="BkgrdCheckReqButtonGroup"/>
+  <buttongroup name="NDASignedButtonGroup"/>
+  <buttongroup name="EmpViewedVideoButtonGroup"/>
+  <buttongroup name="PantsDistButtonGroup"/>
+  <buttongroup name="EmpIntroInterviewButtonGroup"/>
   <buttongroup name="SecurityBadgeDistButtonGroup"/>
   <buttongroup name="UniformReqButtonGroup"/>
-  <buttongroup name="BootsDistButtonGroup"/>
-  <buttongroup name="PantsDistButtonGroup"/>
-  <buttongroup name="ShirtDistButtonGroup"/>
-  <buttongroup name="HatDistButtonGroup"/>
-  <buttongroup name="BkgrdCheckReqButtonGroup"/>
-  <buttongroup name="BkgrdCheckResultButtonGroup"/>
-  <buttongroup name="FirearmsTrainingReqButtonGroup"/>
-  <buttongroup name="FirearmsTrainingCompButtonGroup"/>
-  <buttongroup name="FirearmDistButtonGroup"/>
   <buttongroup name="AmmoDistButtonGroup"/>
-  <buttongroup name="NDARequiredButtonGroup"/>
-  <buttongroup name="NDASignedButtonGroup"/>
  </buttongroups>
 </ui>

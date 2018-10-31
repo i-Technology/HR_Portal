@@ -1,5 +1,5 @@
 brokerExchange: amq.topic
-brokerIP: 192.168.0.11
+brokerIP: 192.168.0.12
 brokerUser: jamie
 deviceId: 58:00:E3:F6:96:50
 deviceName: ITECH_H.R. Portal
