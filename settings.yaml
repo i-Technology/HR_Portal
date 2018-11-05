@@ -1,5 +1,5 @@
 brokerExchange: amq.topic
-brokerIP: 192.168.0.12
+brokerIP: CPEb0faebda0289-CM00fc8d75ac20.cpe.net.cable.rogers.com
 brokerUser: jamie
 deviceId: 58:00:E3:F6:96:50
 deviceName: ITECH_H.R. Portal

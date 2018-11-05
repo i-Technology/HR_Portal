@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Published</string>
   </property>
-  <widget class="QDialogButtonBox" name="buttonBox">
+  <widget class="QDialogButtonBox" name="publishedbuttonBox">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -254,7 +254,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>buttonBox</sender>
+   <sender>publishedbuttonBox</sender>
    <signal>accepted()</signal>
    <receiver>publishedDialog</receiver>
    <slot>accept()</slot>
@@ -270,7 +270,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>buttonBox</sender>
+   <sender>publishedbuttonBox</sender>
    <signal>rejected()</signal>
    <receiver>publishedDialog</receiver>
    <slot>reject()</slot>

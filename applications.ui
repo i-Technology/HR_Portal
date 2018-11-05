@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>openToHireDialog</class>
- <widget class="QDialog" name="openToHireDialog">
+ <class>ApplicationDialog</class>
+ <widget class="QDialog" name="ApplicationDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>447</width>
-    <height>357</height>
+    <height>472</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Open To Hire</string>
+   <string>Applications</string>
   </property>
-  <widget class="QDialogButtonBox" name="openToHireButtonBox">
+  <widget class="QDialogButtonBox" name="ApplicationsButtonBox">
    <property name="geometry">
     <rect>
      <x>110</x>
-     <y>310</y>
+     <y>390</y>
      <width>301</width>
      <height>32</height>
     </rect>
@@ -29,7 +29,7 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="othClassificationLineEdit_2">
+  <widget class="QLineEdit" name="appClassificationLineEdit_2">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -39,7 +39,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="othClassificationLabel">
+  <widget class="QLabel" name="appClassificationLabel">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -52,7 +52,7 @@
     <string>Classification</string>
    </property>
   </widget>
-  <widget class="QLabel" name="othLocationLabel">
+  <widget class="QLabel" name="appLocationLabel">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -65,7 +65,7 @@
     <string>Location</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="othClassificationLineEdit">
+  <widget class="QLineEdit" name="appClassificationLineEdit">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -75,56 +75,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="othFtPtLabel">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>110</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>FT/PT</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="othFTPTComboBox">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>110</y>
-     <width>104</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <item>
-    <property name="text">
-     <string>Full Time</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Part Time</string>
-    </property>
-   </item>
-  </widget>
-  <widget class="QSpinBox" name="othShiftSpinBox">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>140</y>
-     <width>48</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="minimum">
-    <number>1</number>
-   </property>
-   <property name="maximum">
-    <number>3</number>
-   </property>
-  </widget>
-  <widget class="QLabel" name="othShiftLabel">
+  <widget class="QLabel" name="appFirstNameLabel">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -134,10 +85,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>Shift</string>
+    <string>Applicant First Name</string>
    </property>
   </widget>
-  <widget class="QLabel" name="othSeasonalLabel">
+  <widget class="QLabel" name="appMiddleNameLabel">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -147,98 +98,46 @@
     </rect>
    </property>
    <property name="text">
-    <string>Seasonal</string>
+    <string>Applicant Middle Name</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="othSeasonalCheckBox">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>170</y>
-     <width>87</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="othDriversPermitlLabel">
+  <widget class="QLabel" name="appApplicantSerialNoLabel">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>200</y>
+     <y>280</y>
      <width>111</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Driver's Permit</string>
+    <string>Applicant Serial #</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="othDriversPermitCheckBox">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>200</y>
-     <width>87</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="othOwnTransportationCheckBox">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>230</y>
-     <width>87</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="othOwnTransportationLabel">
+  <widget class="QLabel" name="appDateReceivedLabel">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>230</y>
-     <width>141</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Own Transportation</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="othStartDateLabel">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>260</y>
+     <y>110</y>
      <width>111</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Start Date</string>
+    <string>Date received</string>
    </property>
   </widget>
-  <widget class="QDateEdit" name="othStartDateDateEdit">
+  <widget class="QDateEdit" name="appDateReceivedEdit">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>260</y>
+     <y>110</y>
      <width>151</width>
      <height>24</height>
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="othCntractLabel">
+  <widget class="QLabel" name="appCntractLabel">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -251,7 +150,7 @@
     <string>Contract</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="othContractComboBox">
+  <widget class="QComboBox" name="appContractComboBox">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -266,13 +165,138 @@
     </property>
    </item>
   </widget>
+  <widget class="QLineEdit" name="appFirstNameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>140</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="appMiddleNameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>170</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="appApplicantSerialNoLineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>280</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="appSurnameLineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>200</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="othApprovallLabel_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Applicant Surname</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="appApplicationSerialNoLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>240</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="appApplicationSeriallLabel_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Application Serial #</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="appCurrentClassificationLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>320</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="appCurrentClassificationLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Current Classification</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="appCriminalRecordLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>360</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="appCriminalRecordLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Criminal Record</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections>
   <connection>
-   <sender>openToHireButtonBox</sender>
+   <sender>ApplicationsButtonBox</sender>
    <signal>accepted()</signal>
-   <receiver>openToHireDialog</receiver>
+   <receiver>ApplicationDialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -286,9 +310,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>openToHireButtonBox</sender>
+   <sender>ApplicationsButtonBox</sender>
    <signal>rejected()</signal>
-   <receiver>openToHireDialog</receiver>
+   <receiver>ApplicationDialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
