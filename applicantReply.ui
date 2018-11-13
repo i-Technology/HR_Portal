@@ -29,7 +29,7 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="applicantReplyClassificationLineEdit_2">
+  <widget class="QLineEdit" name="applicantReplyClassificationLineEdit">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -152,7 +152,7 @@
     <string>Applicant accepted?</string>
    </property>
   </widget>
-  <widget class="QRadioButton" name="applicantReplyHeardBackYesradioButton">
+  <widget class="QRadioButton" name="applicantReplyHeardBackYesRadioButton">
    <property name="geometry">
     <rect>
      <x>180</x>

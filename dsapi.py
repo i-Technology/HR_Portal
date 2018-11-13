@@ -472,6 +472,7 @@ class Gui(object):
                         btz = '{0}'.format(bodyTuple)
                         self.pubIn.emit(recordType, btz)
                         LOGGER.info("Emitted Alert for: %s", str(recordType))
+                        print("Emitted Alert for: %s", str(recordType))
 
                 #
                 # Execute callback when request received

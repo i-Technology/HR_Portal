@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1255</width>
-    <height>773</height>
+    <height>802</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="benefitsTab">
      <attribute name="title">
@@ -50,7 +50,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="hrWorkforceTab">
        <attribute name="title">
@@ -114,6 +114,11 @@
           </property>
           <column>
            <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
             <string>Contract</string>
            </property>
           </column>
@@ -125,6 +130,11 @@
           <column>
            <property name="text">
             <string>Location</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string># To Hire</string>
            </property>
           </column>
           <column>
@@ -208,6 +218,16 @@
           </property>
           <column>
            <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>OTH ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
             <string>Contract</string>
            </property>
           </column>
@@ -243,7 +263,7 @@
           </column>
           <column>
            <property name="text">
-            <string>Start Date</string>
+            <string>Posting</string>
            </property>
           </column>
           <column>
@@ -313,6 +333,16 @@
             <height>121</height>
            </rect>
           </property>
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>OTH ID</string>
+           </property>
+          </column>
           <column>
            <property name="text">
             <string>Contract</string>
@@ -426,7 +456,7 @@
            <string>Application Outcome</string>
           </property>
          </widget>
-         <widget class="QTableWidget" name="openToHireTableWidget_2">
+         <widget class="QTableWidget" name="applicationOutcomeTableWidget">
           <property name="geometry">
            <rect>
             <x>18</x>
@@ -445,26 +475,26 @@
           </column>
           <column>
            <property name="text">
-            <string>Reason For Failure</string>
+            <string>Failure Reason</string>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>Myers/Briggs classification</string>
+            <string>Myers/Briggs</string>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>Who made determination</string>
+            <string>Determiner</string>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>Job offered Yes/No</string>
+            <string>Job offered</string>
            </property>
           </column>
          </widget>
-         <widget class="QPushButton" name="deleteOTHPushButton_2">
+         <widget class="QPushButton" name="deleteAppOutcomePushButton">
           <property name="geometry">
            <rect>
             <x>890</x>
@@ -477,7 +507,7 @@
            <string>DELETE Selected</string>
           </property>
          </widget>
-         <widget class="QPushButton" name="editOTHPushButton_2">
+         <widget class="QPushButton" name="editAppOutcomePushButton">
           <property name="geometry">
            <rect>
             <x>769</x>
@@ -490,7 +520,7 @@
            <string>EDIT Selected</string>
           </property>
          </widget>
-         <widget class="QPushButton" name="newOTHPushButton_2">
+         <widget class="QPushButton" name="newAppOutcomePushButton">
           <property name="geometry">
            <rect>
             <x>649</x>
@@ -503,7 +533,7 @@
            <string>NEW</string>
           </property>
          </widget>
-         <widget class="QTableWidget" name="openToHireTableWidget_3">
+         <widget class="QTableWidget" name="offerOutcomeTableWidget">
           <property name="geometry">
            <rect>
             <x>18</x>
@@ -524,11 +554,11 @@
           </column>
           <column>
            <property name="text">
-            <string>Method applicant informed</string>
+            <string>Applicant informed</string>
            </property>
           </column>
          </widget>
-         <widget class="QPushButton" name="editOTHPushButton_3">
+         <widget class="QPushButton" name="editOfferOutcomePushButton">
           <property name="geometry">
            <rect>
             <x>769</x>
@@ -541,7 +571,7 @@
            <string>EDIT Selected</string>
           </property>
          </widget>
-         <widget class="QPushButton" name="deleteOTHPushButton_3">
+         <widget class="QPushButton" name="deleteOfferOutcomePushButton_3">
           <property name="geometry">
            <rect>
             <x>890</x>
@@ -567,7 +597,7 @@
            <string>Offer Outcome</string>
           </property>
          </widget>
-         <widget class="QPushButton" name="newOTHPushButton_3">
+         <widget class="QPushButton" name="newOfferOutcomePushButton">
           <property name="geometry">
            <rect>
             <x>649</x>
@@ -580,7 +610,7 @@
            <string>NEW</string>
           </property>
          </widget>
-         <widget class="QPushButton" name="deleteOTHPushButton_4">
+         <widget class="QPushButton" name="deleteApplicantReplyPushButton">
           <property name="geometry">
            <rect>
             <x>881</x>
@@ -593,7 +623,7 @@
            <string>DELETE Selected</string>
           </property>
          </widget>
-         <widget class="QTableWidget" name="openToHireTableWidget_4">
+         <widget class="QTableWidget" name="applicantReplyTableWidget">
           <property name="geometry">
            <rect>
             <x>9</x>
@@ -621,7 +651,7 @@
            </property>
           </column>
          </widget>
-         <widget class="QPushButton" name="newOTHPushButton_4">
+         <widget class="QPushButton" name="newApplicantReplyPushButton">
           <property name="geometry">
            <rect>
             <x>640</x>
@@ -647,7 +677,7 @@
            <string>Applicant Reply</string>
           </property>
          </widget>
-         <widget class="QPushButton" name="editOTHPushButton_4">
+         <widget class="QPushButton" name="editApplicantReplyPushButton">
           <property name="geometry">
            <rect>
             <x>760</x>
@@ -1847,7 +1877,7 @@
      <x>0</x>
      <y>0</y>
      <width>1255</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
@@ -1857,21 +1887,21 @@
  <connections/>
  <buttongroups>
   <buttongroup name="ShirtDistButtonGroup"/>
-  <buttongroup name="NDARequiredButtonGroup"/>
-  <buttongroup name="FirearmDistButtonGroup"/>
-  <buttongroup name="HatDistButtonGroup"/>
-  <buttongroup name="FirearmsTrainingReqButtonGroup"/>
-  <buttongroup name="BootsDistButtonGroup"/>
-  <buttongroup name="EmpViewedVideoButtonGroup"/>
-  <buttongroup name="AmmoDistButtonGroup"/>
-  <buttongroup name="UniformReqButtonGroup"/>
-  <buttongroup name="SecurityBadgeDistButtonGroup"/>
-  <buttongroup name="BkgrdCheckReqButtonGroup"/>
-  <buttongroup name="SecurityLevelButtonGroup"/>
-  <buttongroup name="PantsDistButtonGroup"/>
-  <buttongroup name="BkgrdCheckResultButtonGroup"/>
   <buttongroup name="FirearmsTrainingCompButtonGroup"/>
   <buttongroup name="NDASignedButtonGroup"/>
+  <buttongroup name="AmmoDistButtonGroup"/>
+  <buttongroup name="UniformReqButtonGroup"/>
+  <buttongroup name="SecurityLevelButtonGroup"/>
+  <buttongroup name="PantsDistButtonGroup"/>
+  <buttongroup name="BkgrdCheckReqButtonGroup"/>
+  <buttongroup name="HatDistButtonGroup"/>
+  <buttongroup name="SecurityBadgeDistButtonGroup"/>
   <buttongroup name="EmpIntroInterviewButtonGroup"/>
+  <buttongroup name="FirearmsTrainingReqButtonGroup"/>
+  <buttongroup name="BkgrdCheckResultButtonGroup"/>
+  <buttongroup name="BootsDistButtonGroup"/>
+  <buttongroup name="NDARequiredButtonGroup"/>
+  <buttongroup name="FirearmDistButtonGroup"/>
+  <buttongroup name="EmpViewedVideoButtonGroup"/>
  </buttongroups>
 </ui>

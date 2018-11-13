@@ -7,18 +7,18 @@
     <x>0</x>
     <y>0</y>
     <width>447</width>
-    <height>357</height>
+    <height>363</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Open To Hire</string>
   </property>
-  <widget class="QDialogButtonBox" name="openToHireButtonBox">
+  <widget class="QDialogButtonBox" name="openTiHireButtonBox">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>310</y>
-     <width>301</width>
+     <x>240</x>
+     <y>320</y>
+     <width>171</width>
      <height>32</height>
     </rect>
    </property>
@@ -29,7 +29,7 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="othClassificationLineEdit_2">
+  <widget class="QLineEdit" name="othClassificationLineEdit">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -56,7 +56,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>80</y>
+     <y>110</y>
      <width>111</width>
      <height>16</height>
     </rect>
@@ -65,11 +65,11 @@
     <string>Location</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="othClassificationLineEdit">
+  <widget class="QLineEdit" name="othLocationLineEdit">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>80</y>
+     <y>110</y>
      <width>211</width>
      <height>21</height>
     </rect>
@@ -79,7 +79,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>110</y>
+     <y>140</y>
      <width>111</width>
      <height>16</height>
     </rect>
@@ -92,7 +92,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>110</y>
+     <y>140</y>
      <width>104</width>
      <height>26</height>
     </rect>
@@ -112,7 +112,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>140</y>
+     <y>170</y>
      <width>48</width>
      <height>24</height>
     </rect>
@@ -128,7 +128,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>140</y>
+     <y>170</y>
      <width>111</width>
      <height>16</height>
     </rect>
@@ -141,7 +141,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>170</y>
+     <y>200</y>
      <width>111</width>
      <height>16</height>
     </rect>
@@ -154,7 +154,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>170</y>
+     <y>200</y>
      <width>87</width>
      <height>20</height>
     </rect>
@@ -167,7 +167,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>200</y>
+     <y>230</y>
      <width>111</width>
      <height>16</height>
     </rect>
@@ -180,7 +180,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>200</y>
+     <y>230</y>
      <width>87</width>
      <height>20</height>
     </rect>
@@ -193,7 +193,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>230</y>
+     <y>260</y>
      <width>87</width>
      <height>20</height>
     </rect>
@@ -206,7 +206,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>230</y>
+     <y>260</y>
      <width>141</width>
      <height>16</height>
     </rect>
@@ -219,7 +219,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>260</y>
+     <y>290</y>
      <width>111</width>
      <height>16</height>
     </rect>
@@ -232,7 +232,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>260</y>
+     <y>290</y>
      <width>151</width>
      <height>24</height>
     </rect>
@@ -266,11 +266,59 @@
     </property>
    </item>
   </widget>
+  <widget class="QLabel" name="othQtyLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string># of Positions</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="othQtyLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>80</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="othIdLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>330</y>
+     <width>211</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Id</string>
+   </property>
+  </widget>
  </widget>
+ <tabstops>
+  <tabstop>othContractComboBox</tabstop>
+  <tabstop>othClassificationLineEdit</tabstop>
+  <tabstop>othQtyLineEdit</tabstop>
+  <tabstop>othLocationLineEdit</tabstop>
+  <tabstop>othFTPTComboBox</tabstop>
+  <tabstop>othShiftSpinBox</tabstop>
+  <tabstop>othSeasonalCheckBox</tabstop>
+  <tabstop>othDriversPermitCheckBox</tabstop>
+  <tabstop>othOwnTransportationCheckBox</tabstop>
+  <tabstop>othStartDateDateEdit</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>
-   <sender>openToHireButtonBox</sender>
+   <sender>openTiHireButtonBox</sender>
    <signal>accepted()</signal>
    <receiver>openToHireDialog</receiver>
    <slot>accept()</slot>
@@ -286,7 +334,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>openToHireButtonBox</sender>
+   <sender>openTiHireButtonBox</sender>
    <signal>rejected()</signal>
    <receiver>openToHireDialog</receiver>
    <slot>reject()</slot>

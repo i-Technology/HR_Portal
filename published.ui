@@ -65,7 +65,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="pubClassificationLineEdit_2">
+  <widget class="QLineEdit" name="pubLocationLineEdit">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -248,6 +248,32 @@
      <width>171</width>
      <height>24</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pubIDLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>350</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Publication ID</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="othPubIDLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>370</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OTH ID</string>
    </property>
   </widget>
  </widget>

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>447</width>
-    <height>472</height>
+    <height>365</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,9 +16,9 @@
   <widget class="QDialogButtonBox" name="ApplicationsButtonBox">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>390</y>
-     <width>301</width>
+     <x>240</x>
+     <y>310</y>
+     <width>171</width>
      <height>32</height>
     </rect>
    </property>
@@ -29,58 +29,12 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="appClassificationLineEdit_2">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>50</y>
-     <width>211</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="appClassificationLabel">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>50</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Classification</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="appLocationLabel">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>80</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Location</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="appClassificationLineEdit">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>80</y>
-     <width>211</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLabel" name="appFirstNameLabel">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>140</y>
-     <width>111</width>
+     <width>151</width>
      <height>16</height>
     </rect>
    </property>
@@ -93,7 +47,7 @@
     <rect>
      <x>20</x>
      <y>170</y>
-     <width>111</width>
+     <width>151</width>
      <height>16</height>
     </rect>
    </property>
@@ -101,24 +55,11 @@
     <string>Applicant Middle Name</string>
    </property>
   </widget>
-  <widget class="QLabel" name="appApplicantSerialNoLabel">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>280</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Applicant Serial #</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="appDateReceivedLabel">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>110</y>
+     <y>20</y>
      <width>111</width>
      <height>16</height>
     </rect>
@@ -131,39 +72,11 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>110</y>
+     <y>20</y>
      <width>151</width>
      <height>24</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QLabel" name="appCntractLabel">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Contract</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="appContractComboBox">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>20</y>
-     <width>231</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <item>
-    <property name="text">
-     <string>FB - Border Services Group</string>
-    </property>
-   </item>
   </widget>
   <widget class="QLineEdit" name="appFirstNameLineEdit">
    <property name="geometry">
@@ -185,17 +98,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="appApplicantSerialNoLineEdit_2">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>280</y>
-     <width>211</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="appSurnameLineEdit_3">
+  <widget class="QLineEdit" name="appSurnameLineEdit">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -210,7 +113,7 @@
     <rect>
      <x>20</x>
      <y>200</y>
-     <width>111</width>
+     <width>151</width>
      <height>16</height>
     </rect>
    </property>
@@ -218,34 +121,11 @@
     <string>Applicant Surname</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="appApplicationSerialNoLineEdit">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>240</y>
-     <width>211</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="appApplicationSeriallLabel_3">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>240</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Application Serial #</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="appCurrentClassificationLineEdit">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>320</y>
+     <y>230</y>
      <width>211</width>
      <height>21</height>
     </rect>
@@ -255,8 +135,8 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>320</y>
-     <width>111</width>
+     <y>230</y>
+     <width>151</width>
      <height>16</height>
     </rect>
    </property>
@@ -264,30 +144,130 @@
     <string>Current Classification</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="appCriminalRecordLineEdit">
+  <widget class="QLabel" name="appCriminalRecordLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Criminal Record</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="applicaionIDLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>310</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ID</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="appOthLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>330</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OTH ID</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="appCriminalRecordCheckBox">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>360</y>
-     <width>211</width>
-     <height>21</height>
+     <y>260</y>
+     <width>87</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="appCriminalRecordLabel">
+  <widget class="QLineEdit" name="appClassificationLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>80</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="appLocationLabel">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>360</y>
+     <y>110</y>
      <width>111</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Criminal Record</string>
+    <string>Location</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="appContractLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Contract</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="appContractComboBox">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>50</y>
+     <width>231</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>FB - Border Services Group</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="appClassificationLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Classification</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="appLocationLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>110</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
    </property>
   </widget>
  </widget>

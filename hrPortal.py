@@ -13,12 +13,14 @@ from dsapi import Publisher, Gui, DS_Logger, DS_Utility, DS_Parameters, Libraria
 from flatArchiver import  Archiver
 import atexit
 import time
+from ast import literal_eval as makeTuple
 
 from PyQt5 import QtCore
 from PyQt5.QtCore import pyqtSlot, QMutexLocker, QMutex
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QTableWidgetItem, QApplication, QDialogButtonBox
-
+from OpenToHire import OpenToHire
+from Publication import Publication
 
 
 '''
@@ -27,17 +29,66 @@ from PyQt5.QtWidgets import QMainWindow, QTableWidgetItem, QApplication, QDialog
 
 class HR_Portal(QMainWindow):
     # Object constructor
-    def __init__(self, logger, archiver, librarianClient, dsParam, appParams):
+    def __init__(self, logger, archiver, librarianClient, publisher, dsParam, appParams, utilities):
 
         self.dsParam = dsParam
         self.appParams = appParams
+        self.publisher = publisher
 
-        uiPath = appParams.uiPath
+        # uiPath = appParams.uiPath
+        # openToHireDialogPath = appParams.openToHireDialogPath
+        # publishedDialogPath = appParams.publishedDialofPath
 
         # User Interfaces
 
-        self.ui = uic.loadUi(uiPath)
+        self.ui = uic.loadUi(appParams.uiPath)
+        self.openToHireDialogUi = uic.loadUi(appParams.openToHireDialogPath)
+        self.publishedDialogUi = uic.loadUi(appParams.publishedDialogPath)
+        self.offerOutcomeDialogUi = uic.loadUi(appParams.offerOutcomeDialogPath)
+        self.applicationsDialogUi = uic.loadUi(appParams.applicationsDialogPath)
+        self.applicationOutcomeDialogUi = uic.loadUi(appParams.applicationOutcomeDialogPath)
+        self.applicantReplyDailogUi = uic.loadUi(appParams.applicantReplyDialogPath)
 
+        # Data Objects openToHireDialogUi, firstData, publisher, librarianClient, dsParam, utilities
+
+        self.oth = OpenToHire(self.openToHireDialogUi, self.publisher, librarianClient, dsParam, utilities)
+        self.pub = Publication(self.publishedDialogUi, self.publisher, librarianClient, dsParam, utilities)
+        # self.off = self.OfferOutcome(self.offerOutcomeDialogUi, self.publisher, librarianClient, dsParam, utilities)
+        # self.app = self.Applications(self.applicationsDialogUi, self.publisher, librarianClient, dsParam, utilities)
+        # self.appOutcome = self.ApplicationOutcome(self.applicationOutcomeDialogUi, self.publisher, librarianClient, dsParam, utilities)
+        # self.appReply = self.ApplicationReply(self.applicantReplyDailogUi, self.publisher, librarianClient, dsParam, utilities)
+
+        # Map Buttons to Methods
+
+        # Open To Hire Table
+        self.ui.newOTHPushButton.clicked.connect(self.oth.othNewPBClicked)
+        self.ui.editOTHPushButton.clicked.connect(self.oth.othEditPBClicked)
+        self.ui.deleteOTHPushButton.clicked.connect(self.oth.othDeletePBClicked)
+
+        # Published Table
+        self.ui.newPubPushButton.clicked.connect(self.pub.pubNewPBClicked)
+        self.ui.editPubPushButton.clicked.connect(self.pub.pubEditPBClicked)
+        self.ui.deletePubPushButton.clicked.connect(self.pub.pubDeletePBClicked)
+
+        # # Applications Table
+        # self.ui.newAppPushButton.clicked.connect(self.app.appNewPBClicked)
+        # self.ui.editAppPushButton.clicked.connect(self.app.appEditPBClicked)
+        # self.ui.deleteAppPushButton.clicked.connect(self.app.appDeletePBClicked)
+        #
+        # # Application Outcome Table
+        # self.ui.newAppOutcomePushButton.clicked.connect(self.appOutcome.appOutcomeNewPBClicked)
+        # self.ui.editAppOutcomePushButton.clicked.connect(self.appOutcome.appOutcomeEditPBClicked)
+        # self.ui.deleteAppOutcomePushButton.clicked.connect(self.appOutcome.appOutcomeDeletePBClicked)
+        #
+        # # Offer Outcome Table
+        # self.ui.newOfferOutcomePushButton.clicked.connect(self.off.offerOutcomeNewPBClicked)
+        # self.ui.editOfferOutcomePushButton.clicked.connect(self.off.offerOutcomeEditPBClicked)
+        # self.ui.deleteOfferOutcomePushButton_3.clicked.connect(self.off.offerOutcomeDeletePBClicked)
+        #
+        # # Applicant Reply Table
+        # self.ui.newApplicantReplyPushButton.clicked.connect(self.appReply.applicantReplyNewPBClicked)
+        # self.ui.editApplicantReplyPushButton.clicked.connect(self.appReply.applicantReplyEditPBClicked)
+        # self.ui.deleteApplicantReplyPushButton.clicked.connect(self.appReply.applicantReplyDeletePBClicked)
 
         '''The Gui object uses the qt parameter to determin how messages are passed to this thread from the subscriber 
         thread. If qt is true the subscriber thread is a QThread and passes messages through the pubin. 
@@ -63,20 +114,38 @@ class HR_Portal(QMainWindow):
 
         # self.subscriber.pubIn.connect(self.processMessage)    # Using QT Signals & Slots
 
+
     # This routine receives all the messages the application is subscribing to, and deals with them
+    # @pyqtSlot(str, str)
     def processMessage(self, recordType, message):
         # ToDo Handle the messages
-        if message[0] == 'Record Type Here':
-            pass
+        record = makeTuple(message)
+        parsedRecord = str(record[0])
+        for index, field in enumerate(record):
+            if index >= fd:
+                parsedRecord += ", " + str(record[index])
+        if recordType == '16100.00':
+            self.oth.refreshOpenToHireTable()
+
+    '''
+        DS Records
+    '''
+
+        # ToDo Carry on
+
 
 
 
 class APP_Parameters(object):
-    def __init__(self, uiPath, yearStartMonth, payCycle, seedPayDay):         # Add parameters specific to your application
+    def __init__(self, uiPath, openToHireDialogPath, publishedDialogPath, offerOutcomeDialogPath,
+                 applicationsDialogPath, applicationOutcomeDialogPath, applicantReplyDialogPath):         # Add parameters specific to your application
         self.uiPath = uiPath
-        self.yearStartMonth = yearStartMonth
-        self.payCycle = payCycle
-        self.seedPayDay = seedPayDay
+        self.openToHireDialogPath = openToHireDialogPath
+        self.publishedDialogPath = publishedDialogPath
+        self.offerOutcomeDialogPath = offerOutcomeDialogPath
+        self.applicationsDialogPath = applicationsDialogPath
+        self.applicationOutcomeDialogPath = applicationOutcomeDialogPath
+        self.applicantReplyDialogPath = applicantReplyDialogPath
 
 
 # ------------------------------------------------------------------------------------------------------
@@ -89,8 +158,8 @@ if __name__ == "__main__":
 
     uiPath = 'hrPortal.ui'
 
-    routingKeys = ['0000.00']       # Record Types subscribed to
-    publications = ['0000.00']      # Record Types that this application publishes
+    routingKeys = ['16100.00']       # Record Types subscribed to
+    publications = ['16100.00']      # Record Types that this application publishes
 
     # Initialize DS ( Get dsParams from settings.yaml)
     dsInit = DS_Init(applicationId, applicationName)    # Create the object
@@ -99,14 +168,24 @@ if __name__ == "__main__":
     fd = dsParam.firstData  # Offset to application data in DS records (after metadata)
 
     # Get the application specific parameters
+
     # LOGGER.info('Reading configuration File')
     with open('settings.yaml', 'r') as f:
         condata = yaml.load(f)
-    yearStartMonth = condata.get('yearStartMonth')
-    payCycle = condata.get('payCycle')
-    seedPayDay = condata.get('seedPayDay')
+    # yearStartMonth = condata.get('yearStartMonth')
+    # payCycle = condata.get('payCycle')
+    # seedPayDay = condata.get('seedPayDay')
+    openToHireDialogPath = condata.get('openToHireDialog')
+    publishedDialogPath = condata.get('publishedDialog')
+    offerOutcomeDialogPath = condata.get('offeroutcomeDialog')
+    applicationsDialogPath = condata.get('applicationsDialog')
+    applicationOutcomeDialogPath = condata.get('publishedDialog')
+    applicantReplyDialogPath = condata.get('applicantReplyDialog')
 
-    appParams = APP_Parameters ( uiPath, yearStartMonth, payCycle, seedPayDay)
+
+
+    appParams = APP_Parameters ( uiPath, openToHireDialogPath, publishedDialogPath, offerOutcomeDialogPath,
+                                 applicationsDialogPath, applicationOutcomeDialogPath, applicantReplyDialogPath)
     # appParams = APP_Parameters ( dsParam.yearStartMonth'), dsParam.get('payCycle'), dsParam.get('seedPayDay'))
 
     app = QApplication(sys.argv)
@@ -132,7 +211,7 @@ if __name__ == "__main__":
     # Instantiate a Subscriber Task
     archiver = Archiver(dsParam.archivePath)
 
-    hrPortal = HR_Portal(logger, archiver, librarianClient, dsParam, appParams)
+    hrPortal = HR_Portal(logger, archiver, librarianClient, aPublisher,dsParam, appParams, utilities)
     utilities.startApplication(aPublisher, userId)
     # hrPortal.refreshTables(hrPortal, dsParam.archivePath)
     hrPortal.ui.show()
