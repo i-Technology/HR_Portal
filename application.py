@@ -26,7 +26,7 @@ class Application(object):
         self.location = ''
         self.dateReceived = ''
         self.applicantFirstName = ''
-        self.applicantMiddleName
+        self.applicantMiddleName = ''
         self.applicantSurname = ''
         self.currentClassification = ''
         self.criminalRecord = 0
@@ -70,7 +70,7 @@ class Application(object):
         self.applicationUi.appOthLabel.setText(self.othId)
 
         appContractIndex = self.applicationUi.appContractComboBox.findText(self.contract)
-        self.applicationUi.appContractComboBox..setIndex(appContractIndex)
+        self.applicationUi.appContractComboBox.setIndex(appContractIndex)
         self.applicationUi.appClassificationLineEdit.setText(self.classification)
         self.applicationUi.appLocationLineEdit.text(self.location)
 
@@ -87,7 +87,7 @@ class Application(object):
 
         '''These methods handle CRUD for this record type'''
 
-    def pubNewPBClicked(self):
+    def appNewPBClicked(self):
         self.applicationUi.appDateReceivedEdit.setDate(QDate.currentDate())
         result = self.applicationUi.exec()
         if result != 0:
@@ -100,7 +100,7 @@ class Application(object):
             dataPublished = self.publisher.publish(self.recordType, 0, '00000000-0000-0000-0000-000000000000',
                                                    self.userId, '', '', '', '', '', othTuple)
 
-    def pubEditPBClicked(self):
+    def appEditPBClicked(self):
         selectedAPP = self.applicationUi.applicationsTableWidget.selectedItems()
         if selectedAPP:
             self.getApplicationFromSelection(selectedAPP)
@@ -115,7 +115,7 @@ class Application(object):
                                                        '00000000-0000-0000-0000-000000000000', self.userId,
                                                        '', '', '', '', '', othTuple)
 
-    def pubDeletePBClicked(self):
+    def appDeletePBClicked(self):
         selectedAPP = self.applicationUi.applicationsTableWidget.selectedItems()
         if selectedAPP:
             self.getApplicationFromSelection(selectedAPP)

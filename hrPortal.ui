@@ -50,7 +50,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="hrWorkforceTab">
        <attribute name="title">
@@ -468,6 +468,31 @@
           <attribute name="verticalHeaderDefaultSectionSize">
            <number>30</number>
           </attribute>
+          <column>
+           <property name="text">
+            <string>App ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>OTH ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Contract</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Classification</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Location</string>
+           </property>
+          </column>
           <column>
            <property name="text">
             <string>Criteria Pass/Fail</string>
@@ -1877,7 +1902,7 @@
      <x>0</x>
      <y>0</y>
      <width>1255</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
@@ -1886,22 +1911,22 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="ShirtDistButtonGroup"/>
-  <buttongroup name="FirearmsTrainingCompButtonGroup"/>
-  <buttongroup name="NDASignedButtonGroup"/>
-  <buttongroup name="AmmoDistButtonGroup"/>
   <buttongroup name="UniformReqButtonGroup"/>
-  <buttongroup name="SecurityLevelButtonGroup"/>
-  <buttongroup name="PantsDistButtonGroup"/>
-  <buttongroup name="BkgrdCheckReqButtonGroup"/>
-  <buttongroup name="HatDistButtonGroup"/>
   <buttongroup name="SecurityBadgeDistButtonGroup"/>
-  <buttongroup name="EmpIntroInterviewButtonGroup"/>
-  <buttongroup name="FirearmsTrainingReqButtonGroup"/>
-  <buttongroup name="BkgrdCheckResultButtonGroup"/>
-  <buttongroup name="BootsDistButtonGroup"/>
   <buttongroup name="NDARequiredButtonGroup"/>
-  <buttongroup name="FirearmDistButtonGroup"/>
+  <buttongroup name="AmmoDistButtonGroup"/>
+  <buttongroup name="FirearmsTrainingReqButtonGroup"/>
+  <buttongroup name="ShirtDistButtonGroup"/>
+  <buttongroup name="BkgrdCheckReqButtonGroup"/>
   <buttongroup name="EmpViewedVideoButtonGroup"/>
+  <buttongroup name="FirearmsTrainingCompButtonGroup"/>
+  <buttongroup name="SecurityLevelButtonGroup"/>
+  <buttongroup name="BkgrdCheckResultButtonGroup"/>
+  <buttongroup name="HatDistButtonGroup"/>
+  <buttongroup name="FirearmDistButtonGroup"/>
+  <buttongroup name="EmpIntroInterviewButtonGroup"/>
+  <buttongroup name="PantsDistButtonGroup"/>
+  <buttongroup name="BootsDistButtonGroup"/>
+  <buttongroup name="NDASignedButtonGroup"/>
  </buttongroups>
 </ui>

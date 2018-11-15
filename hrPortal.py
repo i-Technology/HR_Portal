@@ -21,6 +21,8 @@ from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QTableWidgetItem, QApplication, QDialogButtonBox
 from OpenToHire import OpenToHire
 from Publication import Publication
+from application import Application
+from applicationOutcome import ApplicationOutcome
 
 
 '''
@@ -54,8 +56,8 @@ class HR_Portal(QMainWindow):
         self.oth = OpenToHire(self.openToHireDialogUi, self.publisher, librarianClient, dsParam, utilities)
         self.pub = Publication(self.publishedDialogUi, self.publisher, librarianClient, dsParam, utilities)
         # self.off = self.OfferOutcome(self.offerOutcomeDialogUi, self.publisher, librarianClient, dsParam, utilities)
-        # self.app = self.Applications(self.applicationsDialogUi, self.publisher, librarianClient, dsParam, utilities)
-        # self.appOutcome = self.ApplicationOutcome(self.applicationOutcomeDialogUi, self.publisher, librarianClient, dsParam, utilities)
+        self.app = Application(self.applicationsDialogUi, self.publisher, librarianClient, dsParam, utilities)
+        self.appOutcome = ApplicationOutcome(self.applicationOutcomeDialogUi, self.publisher, librarianClient, dsParam, utilities)
         # self.appReply = self.ApplicationReply(self.applicantReplyDailogUi, self.publisher, librarianClient, dsParam, utilities)
 
         # Map Buttons to Methods
@@ -70,16 +72,16 @@ class HR_Portal(QMainWindow):
         self.ui.editPubPushButton.clicked.connect(self.pub.pubEditPBClicked)
         self.ui.deletePubPushButton.clicked.connect(self.pub.pubDeletePBClicked)
 
-        # # Applications Table
-        # self.ui.newAppPushButton.clicked.connect(self.app.appNewPBClicked)
-        # self.ui.editAppPushButton.clicked.connect(self.app.appEditPBClicked)
-        # self.ui.deleteAppPushButton.clicked.connect(self.app.appDeletePBClicked)
-        #
-        # # Application Outcome Table
-        # self.ui.newAppOutcomePushButton.clicked.connect(self.appOutcome.appOutcomeNewPBClicked)
-        # self.ui.editAppOutcomePushButton.clicked.connect(self.appOutcome.appOutcomeEditPBClicked)
-        # self.ui.deleteAppOutcomePushButton.clicked.connect(self.appOutcome.appOutcomeDeletePBClicked)
-        #
+        # Applications Table
+        self.ui.newAppPushButton.clicked.connect(self.app.appNewPBClicked)
+        self.ui.editAppPushButton.clicked.connect(self.app.appEditPBClicked)
+        self.ui.deleteAppPushButton.clicked.connect(self.app.appDeletePBClicked)
+
+        # Application Outcome Table
+        self.ui.newAppOutcomePushButton.clicked.connect(self.appOutcome.appOutcomeNewPBClicked)
+        self.ui.editAppOutcomePushButton.clicked.connect(self.appOutcome.appOutcomeEditPBClicked)
+        self.ui.deleteAppOutcomePushButton.clicked.connect(self.appOutcome.appOutcomeDeletePBClicked)
+
         # # Offer Outcome Table
         # self.ui.newOfferOutcomePushButton.clicked.connect(self.off.offerOutcomeNewPBClicked)
         # self.ui.editOfferOutcomePushButton.clicked.connect(self.off.offerOutcomeEditPBClicked)
@@ -179,7 +181,7 @@ if __name__ == "__main__":
     publishedDialogPath = condata.get('publishedDialog')
     offerOutcomeDialogPath = condata.get('offeroutcomeDialog')
     applicationsDialogPath = condata.get('applicationsDialog')
-    applicationOutcomeDialogPath = condata.get('publishedDialog')
+    applicationOutcomeDialogPath = condata.get('applicationOutcome')
     applicantReplyDialogPath = condata.get('applicantReplyDialog')
 
 
