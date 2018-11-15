@@ -52,7 +52,7 @@ class Publication(object):
             self.internetBoard = 1
         self.approvalDate = self.self.publishedDialogUi.pubApprovalDateEdit.text()
         self.postingDate = self.self.publishedDialogUi.pubPostingDateEdit.text()
-        self.cutoffDate = self.self.publishedDialogUi.pubCutoffDateEdit.text
+        self.cutoffDate = self.self.publishedDialogUi.pubCutoffDateEdit.text()
 
 
     def getPublicationFromSelection(self, selectedItem):
@@ -144,7 +144,7 @@ class Publication(object):
                             self.bulletinBoard, self.newspaper, self.internetBoard, self.approvalDate, self.postingDate,
                             self.cutoffDate, self.startDate)
 
-                dataPublished = self.publisher.publish(self.recordType, 1,
+                dataPublished = self.publisher.publish(self.recordType, 2,
                                                        '00000000-0000-0000-0000-000000000000', self.userId,
                                                        '', '', '', '', '', othTuple)
 
