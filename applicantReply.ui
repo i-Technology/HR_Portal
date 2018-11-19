@@ -168,7 +168,7 @@
     <string notr="true">HeardBackYesNobuttonGroup</string>
    </attribute>
   </widget>
-  <widget class="QRadioButton" name="applicantReplyHeardBackradioButton">
+  <widget class="QRadioButton" name="applicantReplyHeardBackNoradioButton">
    <property name="geometry">
     <rect>
      <x>260</x>
@@ -215,6 +215,32 @@
    <attribute name="buttonGroup">
     <string notr="true">ApplicantAcceptedYesNobuttonGroup</string>
    </attribute>
+  </widget>
+  <widget class="QLabel" name="appReplyOutOthLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Oth ID</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="appReplyOutAppLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>App ID</string>
+   </property>
   </widget>
  </widget>
  <resources/>

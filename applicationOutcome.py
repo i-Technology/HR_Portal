@@ -139,7 +139,7 @@ class ApplicationOutcome(object):
 
     def refreshapplicationOutcomeTable(self):
         self.applicationOutcomeUi.applicationOutcomeTableWidget.clearContents()
-        self.applicationOutcomeUi.aplicationOutcomeTableWidget.setRowCount(0)
+        self.applicationOutcomeUi.applicationOutcomeTableWidget.setRowCount(0)
         dataList = self.getRecords(self.recordType, 'I-Tech H.R. Portal')
         for record in dataList:
             self.appOutcomeId = record[self.firstData]
