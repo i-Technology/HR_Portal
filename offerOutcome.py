@@ -62,7 +62,7 @@ class OfferOutcome(object):
 
     def offerOutcomeNewPBClicked(self):
         #        self.offerOutcomeUi.offerOutcomeStartDateDateEdit.setDate(QDate.currentDate())
-        result = self.applicationOutcomeUi.exec()
+        result = self.offerOutcomeUi.exec()
         if result != 0:
             self.getofferOutcomeDialog()
             self.applicationId = str(uuid.uuid4())  # Give it a new ID

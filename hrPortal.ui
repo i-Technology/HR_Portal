@@ -64,7 +64,7 @@
        <widget class="QTabWidget" name="hrRecruitingRecruitmentTabWidget">
         <property name="geometry">
          <rect>
-          <x>20</x>
+          <x>0</x>
           <y>0</y>
           <width>1071</width>
           <height>631</height>
@@ -340,6 +340,11 @@
           </column>
           <column>
            <property name="text">
+            <string>Application ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
             <string>OTH ID</string>
            </property>
           </column>
@@ -380,17 +385,7 @@
           </column>
           <column>
            <property name="text">
-            <string>Application Serial #</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Applicant Serial #</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>New Column</string>
+            <string>Current Class.</string>
            </property>
           </column>
           <column>
@@ -459,7 +454,7 @@
          <widget class="QTableWidget" name="applicationOutcomeTableWidget">
           <property name="geometry">
            <rect>
-            <x>18</x>
+            <x>20</x>
             <y>30</y>
             <width>1031</width>
             <height>121</height>
@@ -470,7 +465,7 @@
           </attribute>
           <column>
            <property name="text">
-            <string>App ID</string>
+            <string>ID</string>
            </property>
           </column>
           <column>
@@ -480,17 +475,7 @@
           </column>
           <column>
            <property name="text">
-            <string>Contract</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Classification</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Location</string>
+            <string>APP ID</string>
            </property>
           </column>
           <column>
@@ -662,12 +647,12 @@
           </property>
           <column>
            <property name="text">
-            <string>Heard back from employee</string>
+            <string>Applicant Responded</string>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>Date heard back from</string>
+            <string>Response Date</string>
            </property>
           </column>
           <column>
@@ -1902,7 +1887,7 @@
      <x>0</x>
      <y>0</y>
      <width>1255</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
@@ -1911,22 +1896,22 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="UniformReqButtonGroup"/>
-  <buttongroup name="SecurityBadgeDistButtonGroup"/>
-  <buttongroup name="NDARequiredButtonGroup"/>
-  <buttongroup name="AmmoDistButtonGroup"/>
-  <buttongroup name="FirearmsTrainingReqButtonGroup"/>
   <buttongroup name="ShirtDistButtonGroup"/>
-  <buttongroup name="BkgrdCheckReqButtonGroup"/>
-  <buttongroup name="EmpViewedVideoButtonGroup"/>
   <buttongroup name="FirearmsTrainingCompButtonGroup"/>
-  <buttongroup name="SecurityLevelButtonGroup"/>
-  <buttongroup name="BkgrdCheckResultButtonGroup"/>
-  <buttongroup name="HatDistButtonGroup"/>
-  <buttongroup name="FirearmDistButtonGroup"/>
-  <buttongroup name="EmpIntroInterviewButtonGroup"/>
-  <buttongroup name="PantsDistButtonGroup"/>
-  <buttongroup name="BootsDistButtonGroup"/>
   <buttongroup name="NDASignedButtonGroup"/>
+  <buttongroup name="AmmoDistButtonGroup"/>
+  <buttongroup name="UniformReqButtonGroup"/>
+  <buttongroup name="SecurityLevelButtonGroup"/>
+  <buttongroup name="PantsDistButtonGroup"/>
+  <buttongroup name="BkgrdCheckReqButtonGroup"/>
+  <buttongroup name="HatDistButtonGroup"/>
+  <buttongroup name="SecurityBadgeDistButtonGroup"/>
+  <buttongroup name="EmpIntroInterviewButtonGroup"/>
+  <buttongroup name="FirearmsTrainingReqButtonGroup"/>
+  <buttongroup name="BkgrdCheckResultButtonGroup"/>
+  <buttongroup name="BootsDistButtonGroup"/>
+  <buttongroup name="NDARequiredButtonGroup"/>
+  <buttongroup name="FirearmDistButtonGroup"/>
+  <buttongroup name="EmpViewedVideoButtonGroup"/>
  </buttongroups>
 </ui>

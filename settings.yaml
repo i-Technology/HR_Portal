@@ -14,10 +14,7 @@ myDBID: e5a0d9ef-e1b2-4c1f-8283-ced6208ae7e9
 password: popeye
 pathToCertificate: ''
 pathToKey: ''
-payCycle: weekly
 qt: true
 rmqServer: false
-seedPayDay: '2012-01-18'
 tenant: 00000000-0000-0000-0000-000000000000
 userName: i-tech
-yearStartMonth: '04'

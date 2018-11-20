@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>hrPortalMenuing</class>
+ <widget class="QMainWindow" name="hrPortalMenuing">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>869</width>
+    <height>757</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>H.R. Portal</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>869</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBenefits">
+    <property name="title">
+     <string>Benefits</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuPensions">
+    <property name="title">
+     <string>Pensions</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuRecruiting">
+    <property name="title">
+     <string>Recruiting</string>
+    </property>
+    <widget class="QMenu" name="menuRecruitment">
+     <property name="title">
+      <string>Recruitment</string>
+     </property>
+     <addaction name="actionFined"/>
+    </widget>
+    <addaction name="actionWorkforce_Planning"/>
+    <addaction name="menuRecruitment"/>
+    <addaction name="actionOnboarding"/>
+    <addaction name="actionTalent_Development"/>
+   </widget>
+   <widget class="QMenu" name="menuCompensation_Leave">
+    <property name="title">
+     <string>Compensation &amp; Leave</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuDiscipline">
+    <property name="title">
+     <string>Discipline</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSeparation">
+    <property name="title">
+     <string>Separation</string>
+    </property>
+   </widget>
+   <addaction name="menuBenefits"/>
+   <addaction name="menuPensions"/>
+   <addaction name="menuRecruiting"/>
+   <addaction name="menuCompensation_Leave"/>
+   <addaction name="menuDiscipline"/>
+   <addaction name="menuSeparation"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionWorkforce_Planning">
+   <property name="text">
+    <string>Workforce Planning</string>
+   </property>
+  </action>
+  <action name="actionOnboarding">
+   <property name="text">
+    <string>Onboarding</string>
+   </property>
+  </action>
+  <action name="actionTalent_Development">
+   <property name="text">
+    <string>Talent Development</string>
+   </property>
+  </action>
+  <action name="actionFined">
+   <property name="text">
+    <string>Fined</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

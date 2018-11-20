@@ -23,6 +23,9 @@ from OpenToHire import OpenToHire
 from Publication import Publication
 from application import Application
 from applicationOutcome import ApplicationOutcome
+from applicantReply import ApplicantReply
+from offerOutcome import OfferOutcome
+
 
 
 '''
@@ -49,16 +52,18 @@ class HR_Portal(QMainWindow):
         self.offerOutcomeDialogUi = uic.loadUi(appParams.offerOutcomeDialogPath)
         self.applicationsDialogUi = uic.loadUi(appParams.applicationsDialogPath)
         self.applicationOutcomeDialogUi = uic.loadUi(appParams.applicationOutcomeDialogPath)
-        self.applicantReplyDailogUi = uic.loadUi(appParams.applicantReplyDialogPath)
+        self.applicantReplyDialogUi = uic.loadUi(appParams.applicantReplyDialogPath)
 
         # Data Objects openToHireDialogUi, firstData, publisher, librarianClient, dsParam, utilities
 
         self.oth = OpenToHire(self.openToHireDialogUi, self.publisher, librarianClient, dsParam, utilities)
         self.pub = Publication(self.publishedDialogUi, self.publisher, librarianClient, dsParam, utilities)
-        # self.off = self.OfferOutcome(self.offerOutcomeDialogUi, self.publisher, librarianClient, dsParam, utilities)
+        self.off = OfferOutcome(self.offerOutcomeDialogUi, self.publisher, librarianClient, dsParam, utilities)
         self.app = Application(self.applicationsDialogUi, self.publisher, librarianClient, dsParam, utilities)
         self.appOutcome = ApplicationOutcome(self.applicationOutcomeDialogUi, self.publisher, librarianClient, dsParam, utilities)
-        # self.appReply = self.ApplicationReply(self.applicantReplyDailogUi, self.publisher, librarianClient, dsParam, utilities)
+        # self.appReply = ApplicationReply(self.applicantReplyDailogUi, self.publisher, librarianClient, dsParam, utilities)
+        self.applicantReply = ApplicantReply( self.applicantReplyDialogUi, self.publisher, librarianClient, dsParam, utilities)
+        # self.offerOutcome = OfferOutcome(self.offerOutcomeDialogUi, self.publisher, librarianClient, dsParam, utilities)
 
         # Map Buttons to Methods
 
@@ -82,15 +87,15 @@ class HR_Portal(QMainWindow):
         self.ui.editAppOutcomePushButton.clicked.connect(self.appOutcome.appOutcomeEditPBClicked)
         self.ui.deleteAppOutcomePushButton.clicked.connect(self.appOutcome.appOutcomeDeletePBClicked)
 
-        # # Offer Outcome Table
-        # self.ui.newOfferOutcomePushButton.clicked.connect(self.off.offerOutcomeNewPBClicked)
-        # self.ui.editOfferOutcomePushButton.clicked.connect(self.off.offerOutcomeEditPBClicked)
-        # self.ui.deleteOfferOutcomePushButton_3.clicked.connect(self.off.offerOutcomeDeletePBClicked)
-        #
-        # # Applicant Reply Table
-        # self.ui.newApplicantReplyPushButton.clicked.connect(self.appReply.applicantReplyNewPBClicked)
-        # self.ui.editApplicantReplyPushButton.clicked.connect(self.appReply.applicantReplyEditPBClicked)
-        # self.ui.deleteApplicantReplyPushButton.clicked.connect(self.appReply.applicantReplyDeletePBClicked)
+        # Offer Outcome Table
+        self.ui.newOfferOutcomePushButton.clicked.connect(self.off.offerOutcomeNewPBClicked)
+        self.ui.editOfferOutcomePushButton.clicked.connect(self.off.offerOutcomeEditPBClicked)
+        self.ui.deleteOfferOutcomePushButton_3.clicked.connect(self.off.offerOutcomeDeletePBClicked)
+
+        # Applicant Reply Table
+        self.ui.newApplicantReplyPushButton.clicked.connect(self.applicantReply.applicantReplyNewPBClicked)
+        self.ui.editApplicantReplyPushButton.clicked.connect(self.applicantReply.applicantReplyEditPBClicked)
+        self.ui.deleteApplicantReplyPushButton.clicked.connect(self.applicantReply.applicantReplyDeletePBClicked)
 
         '''The Gui object uses the qt parameter to determin how messages are passed to this thread from the subscriber 
         thread. If qt is true the subscriber thread is a QThread and passes messages through the pubin. 
@@ -172,7 +177,7 @@ if __name__ == "__main__":
     # Get the application specific parameters
 
     # LOGGER.info('Reading configuration File')
-    with open('settings.yaml', 'r') as f:
+    with open('appSettings.yaml', 'r') as f:
         condata = yaml.load(f)
     # yearStartMonth = condata.get('yearStartMonth')
     # payCycle = condata.get('payCycle')

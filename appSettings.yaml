@@ -1,0 +1,9 @@
+#
+# Application Settings for H.R. Portal
+#
+openToHireDialog: openToHireDialog.ui
+publishedDialog: published.ui
+offeroutcomeDialog: offeroutcome.ui
+applicationsDialog: applications.ui
+applicationOutcome: applicationOutcome.ui
+applicantReplyDialog: applicantReply.ui

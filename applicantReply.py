@@ -5,7 +5,7 @@ from PyQt5.QtCore import QDate
 from datetime import datetime
 
 
-class applicantReply(object):
+class ApplicantReply(object):
     def __init__(self, applicantReplyUi, publisher, librarianClient, dsParam, utilities):
         # def __init__(self, openToHireDialogUi, othId, contract, classification, location, criteriaPassFail,
         #              shift, seasonal, driversPermit, ownTransportation, startDate):
@@ -16,7 +16,7 @@ class applicantReply(object):
         self.utilities = utilities
 
         self.recordType = '16100.00'
-        self.offerOutcomeUi = applicantReplyUi
+        self.applicantReplyUi = applicantReplyUi
         self.firstData = dsParam.firstData
         self.appId = ''
         self.othId = ''
@@ -27,7 +27,7 @@ class applicantReply(object):
         self.dateHeardBackFrom = datetime.strftime(datetime.now() , '%Y-%m-%d')
         self.applicantAccepted = ''
 
-    def getofferOutcomefromDialog(self):
+    def getApplicantReplyfromDialog(self):
         self.appId = self.applicantReplyUi.appReplyOutAppLabel.text()
         self.othId = self.applicantReplyUi.appReplyOutOthLabel.text()
         self.contract = self.applicantReplyUi.applicantReplyContractComboBox.currentText()
@@ -75,8 +75,8 @@ class applicantReply(object):
         self.applicantReplyUi.applicantReplydateHeardBackFrom.setText(self.dateHeardBackFrom)
         if self.applicantAccepted == 1:
             self.applicantReplyUi.applicantReplyApplicantAcceptedYesradioButton.down(True)
-         else:
-            self.applicationOutcomeUi.applicantReplyApplicantAcceptedNoradioButton.down(False)
+        else:
+            self.applicantReplyUi.applicantReplyApplicantAcceptedNoradioButton.down(False)
 
         '''These methods handle CRUD for this record type'''
 
@@ -84,7 +84,7 @@ class applicantReply(object):
         #        self.applicantReplyUi.applicantReplyStartDateDateEdit.setDate(QDate.currentDate())
         result = self.applicantReplyUi.exec()
         if result != 0:
-            self.getapplicantReplyDialog()
+            self.getApplicantReplyfromDialog()
             self.applicationId = str(uuid.uuid4())  # Give it a new ID
             applicantReplyTuple = (self.applicationId, self.othId, self.contract, self.classification, self.location,
                                  self.heardBackFrom, self.dateHeardBackFrom, self.applicantAccepted)
