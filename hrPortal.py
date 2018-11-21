@@ -165,8 +165,8 @@ if __name__ == "__main__":
 
     uiPath = 'hrPortal.ui'
 
-    routingKeys = ['16100.00']       # Record Types subscribed to
-    publications = ['16100.00']      # Record Types that this application publishes
+    routingKeys = ['16100.00', '16110.00', '16120.00', '16130.00', '16140.00']       # Record Types subscribed to
+    publications = ['16100.00', '16110.00', '16120.00', '16130.00', '16140.00']      # Record Types published
 
     # Initialize DS ( Get dsParams from settings.yaml)
     dsInit = DS_Init(applicationId, applicationName)    # Create the object
